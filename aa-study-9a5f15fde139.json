@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "aa-study",
+  "private_key_id": "9a5f15fde139327834dcbb57ae021aff63bd6add",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDSxVD0i/6QQaSf\n5n5EWRmxCMBXp4Skl2fbfQn+Z18MZfT+dXJetmsvHNpi3qtzwAt7zfXcACPo50dj\nUDOJ2D5hY04IK0vykoxe/PixcNhkugv7e8SnLiN7BFz41v3Djo90NVo7qOS7zw3Q\n4b8W45bNyU51IStBXec+8t+RF1eN6Qvf5Lv3SZASlytIW+XnSGf/3pePTywqiihn\nlKzngfqPtGYxT6JpL5H3kfz2SkZCCgjuu6LKmu7DhlsVWKvCFdbT83lJc8mJB4em\nj9LiS4tVYaRnWpCqwThkw80q7yv6VBvIIeRVH8LEmyBH6zjPA8N/cVe2ZjsrV+Wv\nL2govBQhAgMBAAECggEAA0FMFTIsN1VEybnX8r1sRVGQhY2WQHuE3ExqctroPocD\nwhnoWeFUaP3y4POI2OEs26JXfZpdsTzYHdxA8sUFMlmBgXdr709ZFo2lMfdNpUYS\ngk0wmzYRAAZ+WsmKUe8LH5CjACrCx35XEOTnxa8vfUcwJoqHd5Q/N40VwSYfkA19\nKWuw7aerLMz04uHFXa+X/V4PP3Dudm0mHKOmySXDuw6oO1PxN59pZtxJHi5l/Z5k\nXIecNiHR8McZxXiX9Gdp9i3aLesZD1Nj52Y+tml3j56ZUPX45ksVwMurxkBrZ5Se\nJafdL66FmOWqPyvzZvRG45HBj19lAqCp7rnpETQKmwKBgQD0AuEhhjpiVmJe01xx\nVnBvUysPWDKwVZiJ0EV45gP9uu0r6mY0Gw+U9+BigoWpoNTk3EZZTevZgKy6GJE8\nfEj5kl4dxRVBbPM2/YJugE/MW8wD01DAYiNqnYyuqvqq800wNr3DxUirdLKjfv4R\nSIqfheOIcfydYv9egNOx+uho5wKBgQDdIFhiET5oVFqOLG1xBYfLWnjMnoF4WG+D\nhlMNtstROD3eYKEh5gn1UFrnlgzcLUlhZ4yBUuBnuGf/mUBs2ghtIdrQUmuFYlw4\niP7OYLX1J8sKTrfbVgyUvBib7BJrD0/aLERbzoFdk9VsyKICndaSsLEKzNfpB2m7\nICPdrFhRtwKBgQDoSWVvuIwT2RBEHQk/i331PEMdlGSMoK9ZYj8AXFcoT64/xCAP\nMkOfGGku3fnIBSclxtvhX+BJackETybTYa1GiCO4S0l0wva1PpfQAa31aN3KNnwE\n6Ge2ssyd6n4+BudQIox7tW78aVc1dUr/wQLV4Ws9FOXaHcfketcL80MTuQKBgCYd\n6j5VXJ2dVNLHI8JkwqiyGrqi5Ax7qhVQ9UYa6WdBu6B2pa/zOGo6BMGA4wydHdYV\nhGnSgG5AomSz5SAeYW92c4KPgotGjkEMlGe80gDFcEGBmj3L0nVdCxztj6s2w3wH\nP21X5oLb9eE/oHW1AYTdwlbrQpift4ETJDuU9tB3AoGAdkHnED9WzXwfDd130tBL\n9LihKF5dpK9Zr+CMMnLbcUQaxBW6y/MkjNbHSLFARECsciPd3+L32/e04ll8KW5a\nd+Yfjqr1f+vLR0KMMlBUd1yyYJT2ePBtIPwXM1OW/1d/56ay9ndaRK1p/n6fVypJ\nn/O/U6nwxZW5hGfWzWgnrss=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dpineda-poc@aa-study.iam.gserviceaccount.com",
+  "client_id": "116723190505994709372",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dpineda-poc%40aa-study.iam.gserviceaccount.com"
+}
