@@ -1,3 +1,4 @@
+
 FROM python:3.9
 
 RUN apt-get update && apt-get install -y openjdk-11-jdk
@@ -19,13 +20,11 @@ RUN wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/3.3.0/hado
 # Instalar las bibliotecas de Python necesarias
 RUN pip3 install pyspark==3.2.0 google-cloud-storage avro==1.10.2 google-cloud-bigquery pyarrow pandas==1.4.0
 
-COPY _pandas_helpers.py /app
+
 
 WORKDIR /app
 COPY app.py .
-COPY app2.py .
-
 
 COPY aa-study-7975facd84cd.json /app/aa-study-7975facd84cd.json
 
-CMD ["spark-submit", "--packages=com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.1.4", "--conf", "spark.hadoop.fs.gs.impl=com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem", "--conf", "spark.hadoop.google.cloud.auth.service.account.enable=true", "--conf", "spark.hadoop.google.cloud.auth.service.account.json.keyfile=/app/aa-study-7975facd84cd.json", "app.py", "python", "app2.py"]
+CMD ["app.py"]

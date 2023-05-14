@@ -1,4 +1,3 @@
-
 from pyspark.sql import SparkSession
 from pyspark import SparkFiles
 from google.cloud import bigquery
@@ -36,9 +35,6 @@ def rename_columns(df):
 df = rename_columns(df)
 # escribir en el destino 
 df.write.format("avro") \
-    .save("gs://dpineda-poc/destiny/fire_incidents2.avro")
-    
-    
+    .save("gs://dpineda-poc/destiny/fire_incidents.avro")    
     
 spark.stop()
-
