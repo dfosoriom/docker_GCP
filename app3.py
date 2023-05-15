@@ -30,7 +30,7 @@ table = bigquery.Table(table_ref)
 table = client.create_table(table)
 
 # Carlga los datos desde GCP 
-uri = "gs://cloud-samples-data/bigquery/us-states/us-states.avro"
+uri = "gs://cloud-samples-data/bigquery/us-states/us-states.avro" # reemplazar por  "gs://dpineda-poc/destiny/fire_incidents2.avro" cuando se arreglen los permisos
 load_job = client.load_table_from_uri(uri, table_ref, job_config=job_config)
 
 print(f"Starting job {load_job.job_id}")

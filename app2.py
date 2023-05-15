@@ -1,5 +1,5 @@
 
-#Script para crear tabla en BigQuery y dale esquema a la tabla basado en los datos cargados 
+#Script para crear tabla en BigQuery y darle esquema a la tabla basado en los datos cargados 
 
 from pyspark.sql import SparkSession
 from pyspark import SparkFiles
