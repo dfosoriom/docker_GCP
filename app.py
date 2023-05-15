@@ -1,8 +1,12 @@
+
+
+#Script para Leer datos y almacenarlos en Storage 
+
 from pyspark.sql import SparkSession
 from pyspark import SparkFiles
 from google.cloud import bigquery
 
-
+#construir sesion de spark
 spark = SparkSession.builder \
     .appName("fire_incidents") \
     .config('spark.jars.packages', 'com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.1.4') \
@@ -12,12 +16,12 @@ spark = SparkSession.builder \
     .config('spark.hadoop.google.cloud.auth.service.account.json.keyfile', 'aa-study-7975facd84cd.json') \
     .getOrCreate()
     
-
+#Cargar datos desde URL
 data_uri = "https://data.sfgov.org/api/views/wr8u-xric/rows.csv?accessType=DOWNLOAD"
 spark.sparkContext.addFile(data_uri)
 df = spark.read.csv(SparkFiles.get("rows.csv"), header=True, inferSchema= True)
 
-#renombrar columnas por que avro no lo lee 
+#renombrar columnas 
 def rename_columns(df):
     
     columns = df.columns
@@ -35,6 +39,6 @@ def rename_columns(df):
 df = rename_columns(df)
 # escribir en el destino 
 df.write.format("avro") \
-    .save("gs://dpineda-poc/destiny/fire_incidents.avro")    
+    .save("gs://dpineda-poc/destiny/fire_incidents3.avro")    
     
 spark.stop()

@@ -24,7 +24,13 @@ RUN pip3 install pyspark==3.2.0 google-cloud-storage avro==1.10.2 google-cloud-b
 
 WORKDIR /app
 COPY app.py .
+COPY app2.py .
+COPY app3.py .
 
 COPY aa-study-7975facd84cd.json /app/aa-study-7975facd84cd.json
 
-CMD ["app.py"]
+CMD ["app.py","app2.py","app3.py"]
+
+
+
+
